@@ -32,7 +32,7 @@ public class Photo
     BufferedImage image = new BufferedImage(w, h, ColorSpace.TYPE_RGB);
     Graphics2D graphics = image.createGraphics();
     graphics.setPaint ( new Color ( 200, 200, 200 ) );
-       for(int i = 0; i < points.size()-2; i++)
+       for(int i = 0; i < points.size()-1; i++)
     {
         String[] arrOfStr = points.get(i).split(" ");
         graphics.fillRect (Integer.parseInt(arrOfStr[1]) ,h-Integer.parseInt(arrOfStr[0]), 1, 1);
